@@ -2,17 +2,22 @@
 
 Invert JavaScript maps 🔄.
 
-```js
-const map = new Map();
 
-map.set('foo', 'bar')
-map.set('hello', 'world')
+## API
+
+Create a map.
+
+```js
+> const map = new Map();
+> map.set('foo', 'bar')
+> map.set('hello', 'world')
 ```
 
-```js
-const invert = require('invert-map')
+Invert it.
 
-invert(map)
+```js
+> const invert = require('invert-map')
+> invert(map)
 
 Map { bar => foo, world => hello }
 ```
