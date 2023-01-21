@@ -3,13 +3,15 @@
 Invert JavaScript maps 🔄.
 
 ```js
-> const invert = require('invert-map')
+const map = new Map();
 
-> const x = new Map();
+map.set('foo', 'bar')
+map.set('hello', 'world')
 
-> x.set('foo', 'bar')
+```
+const invert = require('invert-map')
 
-> x.set('hello', 'world')
+invert(map)
 
-> invert(x)
+Map { bar => foo, world => hello }
 ```
