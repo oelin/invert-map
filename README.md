@@ -7,8 +7,9 @@ const map = new Map();
 
 map.set('foo', 'bar')
 map.set('hello', 'world')
-
 ```
+
+```js
 const invert = require('invert-map')
 
 invert(map)
